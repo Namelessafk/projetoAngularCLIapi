@@ -19,7 +19,13 @@ export class ContatosListagemComponent implements OnInit {
   }
 
   listarContatos(){
+    this.contatosService.listarContatos().subscribe( contatos => {
+      this.contatos = contatos;
+    
+    }, err =>{
+      console.log('Erro ao listar os contatos', err);
 
+    })
   }
 
 
