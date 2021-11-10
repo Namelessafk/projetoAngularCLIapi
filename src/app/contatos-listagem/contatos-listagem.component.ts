@@ -7,17 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContatosListagemComponent implements OnInit {
 
-  contatos = [
-    { id: 1 , nome: 'Felix', email: 'felixfeliz@gmail.com'},
-    { id: 2, nome: 'Kowalski', email: 'conrad¬@gmail.com'},
-    { id: 3, nome: 'Doomguy', email: 'caradodoom@gmail.com'}
-  ];
+  contatos: Array<any> = new  Array();
   
 
 
   constructor() { }
 
   ngOnInit(): void {
+    this.listarContatos()
   }
+
+  listarContatos(){
+
+  }
+
 
 }
