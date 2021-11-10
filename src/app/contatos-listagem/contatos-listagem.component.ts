@@ -9,7 +9,8 @@ export class ContatosListagemComponent implements OnInit {
 
   contatos = [
     { id: 1 , nome: 'Felix', email: 'felixfeliz@gmail.com'},
-    { id: 2, nome: 'Kowalski', email: 'conrad¬@gmail.com'}
+    { id: 2, nome: 'Kowalski', email: 'conrad¬@gmail.com'},
+    { id: 3, nome: 'Doomguy', email: 'caradodoom@gmail.com'}
   ];
   
 
