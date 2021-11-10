@@ -8,6 +8,7 @@ import { ContatosListagemService } from '../contatos-listagem.service';
 })
 export class ContatosListagemComponent implements OnInit {
 
+  
   contatos: Array<any> = new  Array();
   
 
@@ -19,14 +20,11 @@ export class ContatosListagemComponent implements OnInit {
   }
 
   listarContatos(){
-    this.contatosService.listarContatos().subscribe( contatos => {
-      this.contatos = contatos;
-    
-    }, err =>{
-      console.log('Erro ao listar os contatos', err);
+    this.contatosService.listarContatos().subscribe(dados => this.contatos = dados)
+     
 
-    })
+    
   }
 
-
 }
+

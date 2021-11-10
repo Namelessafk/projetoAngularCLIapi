@@ -7,9 +7,12 @@ import { Observable } from 'rxjs';
 })
 export class ContatosListagemService {
 
+  contatosURL = "http://localhost:3000/contatos"
+
   constructor(private http: HttpClient) { }
 
-  listarContatos() : Observable<any>{
-    return this.http.get("https://localhost:4200/contatos");
+  listarContatos(){
+    return this.http.get<any[]>(`${this.contatosURL}`);
   }
+
 }
