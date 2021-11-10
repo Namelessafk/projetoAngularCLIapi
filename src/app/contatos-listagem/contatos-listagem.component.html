@@ -1,5 +1,7 @@
 <h2>Listagem </h2> 
 
 <u>
-    <li></li>
+    <li *ngFor="let c of contatos">
+        {{c.id}} - {{c.nome}}
+    </li>
 </u>
